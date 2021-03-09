@@ -1,0 +1,26 @@
+{
+	"name": "calmu/phpenv",
+	"description": "just env() or Env::get",
+	"keywords": ["env", "dotenv", "environment"],
+	"license": "BSD-3-Clause",
+	"authors": [
+		{
+			"name": "Calvin Huang",
+			"email": "huang_calvin@163.com",
+			"homepage": "https://github.com/calmu"
+		}
+	],
+	"require": {
+		"php": "^7.0.33 || ^8.0",
+		"vlucas/phpdotenv": "^5.3",
+		"phpoption/phpoption": "^1.7"
+	},
+	"autoload": {
+		"psr-4": {
+			"Calenv\\": "src/"
+		},
+		"files": [
+			"src/Support/helper.php"
+		]
+	}
+}
